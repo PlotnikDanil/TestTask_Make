@@ -1,0 +1,150 @@
+.UI-check-radio-box {
+    display: flex;
+    font-size: 16px;
+    color: #1B1B1B;
+}
+
+.checkbox-block {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label-checkbox {
+    width: 344px;
+    height: 24px;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.checkbox-text {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    padding-left: 5%;
+}
+
+.radiobutton-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-flag {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #AEADAE;
+    position: relative;
+    opacity: 0.8;
+}
+
+.checkbox-flag:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url('../../image/Path.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.label-checkbox:hover .checkbox-flag {
+    border-color: #3E29E3;
+}
+
+.label-checkbox:hover .checkbox-text {
+    opacity: 1;
+}
+
+
+.checkbox:checked + .checkbox-flag:before { 
+    opacity: 1;
+}
+
+.checkbox:checked + .checkbox-flag {
+    background-color: #3E29E3;
+    opacity: 1;
+}
+
+.checkbox:checked ~ .checkbox-text {
+    opacity: 1;
+}
+
+.radiobutton-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-radiobutton {
+    width: 344px;
+    height: 24px;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.radiobutton {
+    display: none;
+}
+
+.radiobutton-text {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    padding-left: 5%;
+}
+
+.radiobutton-flag {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #AEADAE;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.8;
+}
+
+.radiobutton-flag:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #3E29E3;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.label-radiobutton:hover .radiobutton-flag {
+    border-color: #3E29E3;
+}
+
+.label-radiobutton:hover .radiobutton-text {
+    opacity: 1;
+}
+
+.radiobutton:checked + .radiobutton-flag:before { 
+    opacity: 1;
+}
+
+.radiobutton:checked + .radiobutton-flag {
+    border-color: #3E29E3;
+    opacity: 1;
+}
+
+.radiobutton:checked ~ .radiobutton-text {
+    opacity: 1;
+}

@@ -1,0 +1,82 @@
+.grid {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(103, 45, 150);
+    top: 50%;
+    z-index: 998;
+}
+
+.desktop {
+    display: flex;
+    gap: 0 32px;
+}
+
+.column-desk {
+    background-color: rgba(241, 65, 65, 0.473);
+    width: 80px;
+    height: 100%;
+    max-width: 80px;
+    min-width: 60px;
+}
+
+.pad {
+    display: none;
+    gap: 0 32px;
+}
+
+.column-pad {
+    background-color: rgba(241, 65, 65, 0.473);
+    width: 88px;
+    height: 100%;
+    max-width: 88px;
+    min-width: 56px;
+}
+
+.phone {
+    display: none;
+    gap: 0 24px;
+}
+
+.column-phone {
+    background-color: rgba(241, 65, 65, 0.473);
+    width: 88px;
+    height: 100%;
+    max-width: 88px;
+    min-width: 56px;
+}
+
+@media (max-width:1200px) {
+    .desktop {
+        display: none;
+        gap: 0 32px;
+    }
+
+    .pad {
+        display: flex;
+        gap: 0 32px;
+    }
+}
+
+
+@media (max-width: 736px) {
+
+    .pad {
+        display: none;
+        gap: 0 32px;
+    }
+
+    .phone {
+        display: flex;
+        gap: 0 24px;
+    }
+} 

@@ -1,0 +1,12 @@
+.UI {
+    width: 100%;
+    height: 100vh;
+}
+
+.textField,
+.UI-dropdown-menu,
+.UI-button,
+.UI-check-radio-box,
+.UI-accordion {
+    padding: 2%;
+}

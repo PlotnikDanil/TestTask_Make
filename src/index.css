@@ -1,0 +1,19 @@
+@import './style/fonts.css';
+@import './style/header_style/_headerStyle.css';
+@import './style/_gridStyle.css';
+@import './style/_typographyStyle.css';
+@import './style/header_style/_brgMenuStyle.css';
+@import './style/ui_style/_UIStyle.css';
+@import './style/ui_style/_UITextField.css';
+@import './style/ui_style/_UIDropdownMenu.css';
+@import './style/ui_style/_UIButton.css';
+@import './style/ui_style/_UICheckRadioBox.css';
+@import './style/ui_style/_UIAccordion.css';
+
+
+* {
+    background-color: #F2F2F2;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Graphik';
+}

@@ -1,0 +1,145 @@
+.burger-menu {
+    margin-left: auto;
+    padding: 2%;
+    z-index: 999;
+}
+
+#menu-toggle {
+    opacity: 0;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: auto;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #1B1B1B;
+}
+
+.menu-btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu-btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.burger-menu-content {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../image/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition-duration: 250ms;
+}
+
+.brg-content {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 97.5vh;
+    margin: 10px 0 10px 10px;
+}
+
+.info-content { 
+    display: flex;
+}
+
+.brg-img {
+    padding: 2% 0 0 4%;
+}
+
+.pers-info {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 3% 0 0 5%;
+    color: #1B1B1B;
+}
+
+.pers-info span {
+    font-size: 14px;
+    color:#7D7D7D;
+    margin-bottom: 12vh;
+}
+
+.pers-info h1 {
+    padding-bottom: 6vh;
+}
+
+.info {
+    font-size: 16px;
+    line-height:28px;
+    width: 65%;
+    padding-bottom: 6vh;
+}
+
+.phone-number {
+    font-size: 18px;
+    font-weight: medium;
+    padding-bottom: 40vh;
+}
+
+.messenger {
+    text-align: center;
+    padding-right: 12vh;
+}
+
+.messenger a {
+    font-size: 16px;
+    color: #3E29E3;
+    font-weight: medium;;
+    text-decoration: none;
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .menu-btn {
+    position: fixed;
+}
+
+#menu-toggle:checked ~ .burger-menu-content {
+    visibility: visible;
+    right: 0;
+}
+
+#menu-toggle:checked ~ #grid {
+    overflow: hidden;
+}
+

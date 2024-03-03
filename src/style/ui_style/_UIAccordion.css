@@ -1,0 +1,56 @@
+.UI-accordion {
+    font-size: 16px;
+}
+
+.accordion-item {
+    position: relative;
+}
+
+.accordion-item__trigger {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CBCBCC;
+    color: #7D7D7D;
+}
+
+.accordion-arrow {
+    position: absolute;
+    right: 10px;
+    border: solid #3E29E3;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.accordion-item__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.accordion-item__content {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #3E29E3;
+    display: none;
+    color: #1B1B1B;
+    line-height: 24px;
+}
+
+.accordion-item__trigger:hover {
+    color: #1B1B1B;
+    border-color: #3E29E3;
+}
+
+.accordion-item__input:checked ~ .accordion-item__trigger {
+    color: #3E29E3;
+    border: none;
+}
+
+.accordion-item__input:checked ~ .accordion-item__content {
+    display: block;
+}
+
+.accordion-item__input:checked ~ .accordion-item__trigger > .accordion-arrow {
+    transform: rotate(225deg);
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo.png" type="image/jpg">
+    <title>TestTask</title>
+</head>
+<body>
+    <header>
+        <div class="header-menu">
+            <div class="logo">
+                <img src="./image/logo.png" alt="Make-logo">
+                <div class="dev-info">Плотников <br>Даниил Игоревич</div>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <a href="#grid">Сетка</a>
+                    <a href="#typography">Типографика</a>
+                    <a href="#UI">UI</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header-content">
+            <h1>Тестовое задание</h1>
+        </div>
+        <div class="burger-menu">
+            <input id="menu-toggle" type="checkbox">
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+
+            <div class="burger-menu-content">
+                <div class="brg-content">
+                    <div class="info-content">
+                        <div class="brg-img">
+                            <img src="./image/logo.png" alt="Make-logo">
+                        </div>
+                        <div class="pers-info">
+                            <span>Задание выполнил</span> 
+                            <h1>Плотников <br> Даниил Игоревич</h1>
+                            <p class="info">Закончил бакалавриат по специальности "автоматезированное 
+                                управление бизнес-процессами и финансами" в ТУСУР, 
+                                на факультете вычислительных систем.</p>
+                            <p class="phone-number">+7-996-938-0072</p>
+                            <!-- <div class="messenger">
+                                <a href="http://t.me/PlotnikovDani_l">Ссылка на мессенджер</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="messenger">
+                        <a href="http://t.me/PlotnikovDani_l">Ссылка на мессенджер</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="grid" id="grid">
+        <div class="line"></div>
+        <div class="desktop">
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+            <div class="column-desk"></div>
+        </div>
+        <div class="pad">
+            <div class="column-pad"></div>
+            <div class="column-pad"></div>
+            <div class="column-pad"></div>
+            <div class="column-pad"></div>
+            <div class="column-pad"></div>
+            <div class="column-pad"></div>
+            <div class="column-pad"></div>
+            <div class="column-pad"></div>
+        </div>
+        <div class="phone">
+            <div class="column-phone"></div>
+            <div class="column-phone"></div>
+            <div class="column-phone"></div>
+            <div class="column-phone"></div>
+        </div>
+    </div>
+
+    <div class="typography" id="typography">
+        <div class="typography-menu">
+            <div class="typography-option"><span class="typography-option-desktop">Десктоп</span> <span class="typography-option-phone">Телефон</span></div>
+            <div class="typography-fonts">
+                <div class="typography-line-1"><span>Заголовок H1, 48/56, bold</span> <h1 class="h1">Текст заголовка</h1></div>
+                <div class="typography-line-2"><span>Заголовок H2, 32/40, bold</span> <h2>Текст заголовка</h2></div>
+                <div class="typography-line-3"><span>Заголовок H3, 24/32, medium</span> <h3>Текст заголовка</h3></div>
+                <div class="typography-line-4"><span>Заголовок H4, 18/28, medium</span> <h4>Текст заголовка</h4></div>
+                <div class="typography-line-5"><span>Лид P_Lead, 24/32, regular</span> Текст лида</div>
+                <div class="typography-line-6"><span>Крупный текст P_18, 18/28, regular</span> Крупный текст</div>
+                <div class="typography-line-7"><span>Основной текст P_16, 16/24, regular</span> Основной текст</div>
+                <div class="typography-line-8"><span>Впомогательный текст P_14, 14/20, regular</span>Вспомогательный текст</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="UI" id="UI">
+        <div class="textField">
+            <label class="input_label" for="textField-input">E-mail</label>
+            <input class="textField-input" type="text" placeholder="E-mail">
+            <div class="error-message"></div>
+        </div>
+
+        <div class="UI-dropdown-menu">
+            <button class="dropdown-btn">
+                <span class="list-element-content">Выберите что-нибудь</span> 
+                <span class="arrow"></span>
+            </button>
+            <div class="menu-list">
+                <a class="list-element" href="#">Первый стул</a>
+                <a class="list-element" href="#">Второй стул</a>
+                <a class="list-element" href="#">Выбранный пункт</a>
+                <a class="list-element" href="#">Теорема Эскобара</a>
+            </div>
+        </div>
+        <div class="UI-button">
+            <button class="UI-btn">Отправить</button>
+        </div>
+        <div class="UI-check-radio-box">
+            <div class="checkbox-block">
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-flag"></span>
+                    <span class="checkbox-text">Выбери меня</span>
+                </label>
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-flag"></span>
+                    <span class="checkbox-text">Выбери меня</span>
+                </label>
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-flag"></span>
+                    <span class="checkbox-text">Птица счастья завтрашнего дня</span>
+                </label>
+            </div>
+            <div class="radiobutton-block">
+                <label class="label-radiobutton">
+                    <input type="radio" class="radiobutton" name="name1">
+                    <span class="radiobutton-flag"></span>
+                    <span class="radiobutton-text">Пластмассовый мир победил</span>
+                </label>
+                <label class="label-radiobutton">
+                    <input type="radio" class="radiobutton" name="name1">
+                    <span class="radiobutton-flag"></span>
+                    <span class="radiobutton-text">Макет оказался сильней</span>
+                </label>
+                <label class="label-radiobutton">
+                    <input type="radio" class="radiobutton" name="name1">
+                    <span class="radiobutton-flag"></span>
+                    <span class="radiobutton-text">Последний кораблик остыл</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="UI-accordion">
+            <div class="accordion-item">
+                <input type="checkbox" class="accordion-item__input" id="accordion">
+                <label for="accordion" class="accordion-item__trigger">
+                    Аккордеон
+                    <span class="accordion-arrow"></span>
+                </label>
+                <div class="accordion-item__content">
+                    Гоpдость полными вагонами золотыми погонами<br/>
+                    С юга дyют молодые вет…<br/>
+                    Pазpывая в клочья облака не забыли шлют из далека<br/>
+                    С дома мама И не последняя любовь<br/>
+                    А по небy бегyт видишь чьи-то следы<br/>
+                    Это может быть ты это может быть я<br/>
+                    Это может наш дрyг<br/>
+                    Это может нам поют свои<br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
